@@ -8,11 +8,12 @@
 /* TODO: 
 - Create a flex box container to have "in-touch" and "contact" sections inline with one another on the same row. 
 - When clicking on the 'mywork' tab, have a hover effect with text and when clicked on have it link to my pervious deployed assignment
-- Add in my contact information, have the emojies of linkedin and github be clickable links to my profile (_target links)
+- Add in my contact information, have the emojies of linkedin and github be clickable links to my profile (_target links) on the bottom of the page 
 - Have a scroll to the top button at the bottom right of the page appear when scrolling the page 
 - Have media queries adjust all elements of the page - like having a dropdown emojie appear for the nav links when it gets to a certain screen size 
 - Make h1 a link to reload the page
 - Where does the submitted information go?
+- Figure out what exactly should be put in your readme? Wireframe, explanation of desgin or creation process?
 */
 
 ::selection {
@@ -20,7 +21,7 @@
     color: var(--background-colour);
 }
 
-/* ------------------------- Element Selectors ------------------------- */
+/* ------------------------- Element Selectors, adjusting page stylings after reset.css is applied ------------------------- */
 html {
     font-size: 62.5%;
 }
@@ -261,6 +262,7 @@ text-align: inherit 50px left;
 
 .follow-me {
     display: flex;
+    justify-content: center;
 }
 
 .footer-surname {
