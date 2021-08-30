@@ -10,10 +10,9 @@
 - When clicking on the 'mywork' tab, have a hover effect with text and when clicked on have it link to my pervious deployed assignment
 - Add in my contact information, have the emojies of linkedin and github be clickable links to my profile (_target links) on the bottom of the page 
 - Have a scroll to the top button at the bottom right of the page appear when scrolling the page 
+- Fix forum stylings
 - Have media queries adjust all elements of the page - like having a dropdown emojie appear for the nav links when it gets to a certain screen size 
-- Make h1 a link to reload the page
-- Where does the submitted information go?
-- Figure out what exactly should be put in your readme? Wireframe, explanation of desgin or creation process?
+- Figure out what exactly should be put in README? Wireframe, explanation of desgin or creation process?
 */
 
 ::selection {
@@ -95,9 +94,11 @@ header div h1.title {
     transition: 400ms ease-in-out;
     margin-left: 9px;
     color: var(--secondary-text-colour);
+    display: none;
 }
 
 .title:hover .surname {
+    display: block;
     opacity: 1;
 }
 
@@ -106,14 +107,17 @@ header div h1.title {
     color: var(--header-colour);
     margin: 25px;
     padding: 10px;
+    transition: padding 250ms ease-in-out, opacity .2s ease-in-out;
+    opacity: 50%;
 }
 
+/* Need to fix issue of padding */
 .nav-link:hover {
     opacity: .65;
-    transition: padding 250ms ease-in-out, opacity .2s ease-in-out;
     color: var(--secondary-text-colour);
     line-height: 29px;
     font-weight: 400;
+
 }
 
 /* nav:before {
@@ -203,6 +207,7 @@ label {
 .container {
     display: flex;
     justify-content: space-between;
+    flex-flow: row wrap;
 }
 
 .seo {
@@ -239,13 +244,15 @@ text-align: inherit 50px left;
 } */
 
 .profile {
+    flex: 1 0 30%;
     width: 30%;
     height: auto;
     display: inline-block;
-    margin: 5px 40px 5px 5px;
+    margin: 5px 10px 5px 5px;
 }
 
 .theme-box {
+    flex: 0 0 60%;
     white-space: pre-wrap;
     overflow: auto;
     padding: 1.2rem 1rem;
@@ -260,19 +267,40 @@ text-align: inherit 50px left;
     align-items: center;
 }
 
+.project-nametag {
+    position: relative;
+    display: table;
+    top: 330px;
+    color: var(--primary-text-colour);
+    background-color: var(--header-colour);
+    border-radius: 3px;
+    padding: 9px;
+    z-index: 1;
+}
+
+.project-nametag:hover {
+    transition: width; 
+    transition-delay: .5s;
+    transition-duration: 5s;
+    transition-timing-function: ease-in-out;
+    width: 100%;
+}
+
+.feature-project {
+   flex: 0 0 100%;
+}
+
+/* .feature-project:hover {} */
+
 .follow-me {
     display: flex;
     justify-content: center;
+    width: 9px;
+    height: 10px;
 }
 
 .footer-surname {
     color: var(--secondary-text-colour);
-}
-
-.logos {
-    width: 5%;
-    display: flex;
-    justify-content: center;
 }
 
 /* ------------------------- Form stylings ------------------------- */
