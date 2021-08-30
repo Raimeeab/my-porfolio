@@ -88,7 +88,7 @@ header div h1.title {
     display: flex;
 }
 
-/* Hover effect on the header title of the page */
+/* Hover effect on the title of the page, will also reload the page */
 .surname {
     opacity: 0;
     transition: 400ms ease-in-out;
@@ -269,6 +269,8 @@ text-align: inherit 50px left;
 
 .logos {
     width: 5%;
+    display: flex;
+    justify-content: center;
 }
 
 /* ------------------------- Form stylings ------------------------- */
