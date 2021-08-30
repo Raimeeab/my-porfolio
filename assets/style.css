@@ -108,7 +108,6 @@ header div h1.title {
     opacity: 50%;
 }
 
-/* Need to fix issue of padding */
 .nav-link:hover {
     opacity: .65;
     color: var(--secondary-text-colour);
@@ -183,7 +182,6 @@ label {
     width: 70%;
 }
 
-
 .sections > h2 {
     text-align: right;
     padding-right: 1rem;
@@ -206,14 +204,6 @@ label {
 .seo {
     width: 100%;
 }
-/* 
-.seo:hover {
-    background-image: linear-gradient(
-        rgb(25, 133, 161) 10%,
-        rgba(62, 121, 136, 0.931) 90%);
-        opacity: 60%;
-    z-index: 1;
-} */
 
 .profile {
     flex: 1 0 30%;
@@ -269,16 +259,39 @@ label {
     width: 50%;
 }
 
-.form {
+.form-section {
     display: flex;
-    flex: row wrap;
     justify-content: center;
+}
+
+.form-section > h2 {
+    text-align: right;
+    padding-right: 1rem;
+    flex: 0 0 15%;
+    border-right: 3px solid var(--header-colour);
+    line-height: 5vw;
+    font-size: 3.5rem;
+}
+
+
+.form {
     margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
 }
 
 .form input, textarea {
     width: 100%;
     outline: none;
+    /* padding-right: 700px; */
+    margin: 5px 1px 3px 0px;
+    border-bottom: 5px solid var(--header-colour);
+    border-left: 0px solid transparent;
+    border-right: 0px solid transparent;
+    border-top: 0px solid transparent;
+    background-color: transparent;
 }
 
 .follow-me {
