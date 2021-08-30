@@ -6,13 +6,10 @@
 }
 
 /* TODO: 
-- Create a flex box container to have "in-touch" and "contact" sections inline with one another on the same row. 
-- When clicking on the 'mywork' tab, have a hover effect with text and when clicked on have it link to my pervious deployed assignment
-- Add in my contact information, have the emojies of linkedin and github be clickable links to my profile (_target links) on the bottom of the page 
+- FIX PROJECT FLEXBOX!
 - Have a scroll to the top button at the bottom right of the page appear when scrolling the page 
-- Fix forum stylings
+- Fix form stylings
 - Have media queries adjust all elements of the page - like having a dropdown emojie appear for the nav links when it gets to a certain screen size 
-- Figure out what exactly should be put in README? Wireframe, explanation of desgin or creation process?
 */
 
 ::selection {
@@ -157,10 +154,6 @@ section {
     padding-bottom: 50px;
 }
 
-form {
-    border: 2px solid var(--header-colour);
-}
-
 label {
     display: block;
 }
@@ -213,34 +206,13 @@ label {
 .seo {
     width: 100%;
 }
-
+/* 
 .seo:hover {
     background-image: linear-gradient(
         rgb(25, 133, 161) 10%,
         rgba(62, 121, 136, 0.931) 90%);
         opacity: 60%;
     z-index: 1;
-}
-
-/* .main-work{
-    flex-grow: 2 1 1;
-    align-self: center;
-} */
-
-/* 
-.second-container {
-    display: flex;
-    flex: initial;
-    justify-content: flex-start;
-} 
-
-.third-container {
-    display: flex;
-    justify-content: flex-end;
-} */
-
-/* .sections . h3 {
-text-align: inherit 50px left;
 } */
 
 .profile {
@@ -267,36 +239,56 @@ text-align: inherit 50px left;
     align-items: center;
 }
 
+.feature-project {
+   flex: 2 1 1;
+   position: relative;
+}
+
 .project-nametag {
-    position: relative;
-    display: table;
-    top: 330px;
-    color: var(--primary-text-colour);
-    background-color: var(--header-colour);
+    position: absolute;
+    top: 238px;
+    color: var(--background-colour);
+    background-image: linear-gradient(
+        rgb(25, 133, 161) 10%,
+        rgba(62, 121, 136, 0.931) 90%);
+        opacity: 90%;
     border-radius: 3px;
+    transition: width 250ms ease-in-out;
+    width: 135px;
+    height: 92px;
     padding: 9px;
     z-index: 1;
 }
 
 .project-nametag:hover {
-    transition: width; 
-    transition-delay: .5s;
-    transition-duration: 5s;
-    transition-timing-function: ease-in-out;
     width: 100%;
+    height: 92px;
 }
 
-.feature-project {
-   flex: 0 0 100%;
+.in-progress {
+    width: 50%;
 }
 
-/* .feature-project:hover {} */
+.form {
+    display: flex;
+    flex: row wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.form input, textarea {
+    width: 100%;
+    outline: none;
+}
 
 .follow-me {
     display: flex;
     justify-content: center;
-    width: 9px;
-    height: 10px;
+    align-items: center;
+}
+
+.logos {
+    width: 30px;
 }
 
 .footer-surname {
