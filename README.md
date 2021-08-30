@@ -2,21 +2,20 @@
 *APPLY REMAINING BADAGES HERE https://shields.io/ *
 
 # <My Portfolio>
+---
 ## Description
 This website is created to showcase my portfolio, which will host all my major projects and will allow future employers and clients to become more familiar with my work and skills. I built this website to give myself a little more character and set myself a part from other candidates for any future jobs I apply for. This website will solve the problem of having to send out my major projects as single URLs/ Repos as it conveniently contains all of them in the one space.
  -WHAT DID YOU LEARN?
 
 Link to the [site]*{APPLY DEPLOYED LINK HERE}*
+
 ## Usage
 Provide instructions and examples for use. Include screenshots as needed.
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
     ```md
     ![alt text](assets/images/screenshot.png)
     ```
-## Credits
-List your collaborators, if any, with links to their GitHub profiles.
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-If you followed tutorials, include links to those here as well.
+
 ## License
 MIT License
 Copyright (c) [2021] [RaimeeAb]
