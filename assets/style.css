@@ -85,7 +85,7 @@ header div h1.title {
     display: flex;
 }
 
-/* Hover effect on the title of the page, will also reload the page */
+/* Hover effect on the title of the page*/
 .surname {
     opacity: 0;
     transition: 400ms ease-in-out;
@@ -128,6 +128,8 @@ nav:after, nav:before {
     display: flex;
 } */
 
+
+/* ------------------------- Main section stylings -----------------------*/
 main {
     width: 96%;
     margin: 2rem auto;
@@ -170,6 +172,7 @@ label {
     margin: inherit auto;
 }
 
+/* Main flex container */
 .sections {
     margin: 1.5rem 0;
     display: flex;
@@ -182,6 +185,7 @@ label {
     width: 70%;
 }
 
+/* Vertical lines across screen */
 .sections > h2 {
     text-align: right;
     padding-right: 1rem;
@@ -195,19 +199,16 @@ label {
     flex: 0 0 84%;
 }
 
+/* "About me" section stylings */
 .container {
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
 }
 
-.seo {
-    width: 100%;
-}
-
 .profile {
-    flex: 1 0 30%;
-    width: 30%;
+    flex: 1 0 20%;
+    width: 20%;
     height: auto;
     display: inline-block;
     margin: 5px 10px 5px 5px;
@@ -227,6 +228,11 @@ label {
         opacity: 39%;
     display: flex;
     align-items: center;
+}
+
+/* "Work" section stylings */
+.seo {
+    width: 100%;
 }
 
 .feature-project {
@@ -255,17 +261,30 @@ label {
     height: 92px;
 }
 
-.in-progress {
+.upcoming-projects {
+    display: flex;
+    flex-direction: row;
+}
+
+.in-progress{
     width: 50%;
 }
 
+/* ------------------------- Form stylings ------------------------- */
+label {
+    font-weight: bold;
+}
+
+.form {
+    padding-left: 240px;
+  }
+
 .form-section {
     display: flex;
-    justify-content: center;
 }
 
 .form-section > h2 {
-    text-align: right;
+    text-align: left;
     padding-right: 1rem;
     flex: 0 0 15%;
     border-right: 3px solid var(--header-colour);
@@ -273,42 +292,19 @@ label {
     font-size: 3.5rem;
 }
 
-
-.form {
-    margin-bottom: 20px;
-}
-
-label {
-    font-weight: bold;
-}
-
 .form input, textarea {
     width: 100%;
     outline: none;
-    /* padding-right: 700px; */
+    padding-left: 50px;
+    padding-right: 50px;
     margin: 5px 1px 3px 0px;
-    border-bottom: 5px solid var(--header-colour);
+    border-bottom: 3px solid var(--header-colour);
     border-left: 0px solid transparent;
     border-right: 0px solid transparent;
     border-top: 0px solid transparent;
     background-color: transparent;
+    position: relative
 }
-
-.follow-me {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.logos {
-    width: 30px;
-}
-
-.footer-surname {
-    color: var(--secondary-text-colour);
-}
-
-/* ------------------------- Form stylings ------------------------- */
 
 #submit {
     background-color: var(--background-colour);
@@ -322,6 +318,8 @@ label {
     text-decoration: none;
     cursor: pointer;
     border:none;
+    position: absolute;
+    margin-left: 600px;
 }
 
 #submit:hover {
@@ -331,6 +329,20 @@ label {
     box-shadow: 0px 0px 1px var(--background-colour);
 }
 
-/* #submit:after {} */
+
+/* ------------------------- Footer stylings ------------------------- */
+.follow-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logos {
+    width: 30px;
+}
+
+.footer-surname {
+    color: var(--secondary-text-colour);
+}
 
 /* ------------------------- Media Quiries ------------------------- */
