@@ -135,10 +135,6 @@ main {
     margin: 2rem auto;
 }
 
-footer {
-    margin: 1.5rem;
-    text-align: center;
-}
 
 ul {
     display: flex;
@@ -195,13 +191,10 @@ label {
     font-size: 3.5rem;
 }
 
-.sections div {
-    flex: 0 0 84%;
-}
-
 /* "About me" section stylings */
 .container {
     display: flex;
+    flex: 0 0 84%;
     justify-content: space-between;
     flex-flow: row wrap;
 }
@@ -266,8 +259,13 @@ label {
     flex-direction: row;
 }
 
-.in-progress{
-    width: 50%;
+iframe {
+    position: relative;
+    margin-right: 90px;
+}
+
+.podcast{
+    width: 100%;
 }
 
 /* ------------------------- Form stylings ------------------------- */
@@ -331,6 +329,11 @@ label {
 
 
 /* ------------------------- Footer stylings ------------------------- */
+footer {
+    margin: 1.5rem;
+    text-align: center;
+}
+
 .follow-me {
     display: flex;
     justify-content: center;
@@ -346,3 +349,37 @@ label {
 }
 
 /* ------------------------- Media Quiries ------------------------- */
+@media screen and (max-width: 760px) {
+    .sections, .container, .form-section{
+        flex-flow: column nowrap;
+    }
+    
+    .main-header {
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container .profile{
+        align-self: stretch;
+        width: 100%;
+        height: auto;
+    }
+
+    .sections > h2, 
+    .form-section > h2 {
+        text-align: center;
+        padding-bottom: 1rem;
+        flex: 0 0 100px;
+        border-right: none;
+        border-bottom: 3px solid var(--header-colour);
+        line-height: 5vw;
+        font-size: 3.5rem;
+    }
+
+    .nav-link {
+        color: var(--header-colour);
+        margin: none;
+        flex-wrap: nowrap;
+    }
+}
