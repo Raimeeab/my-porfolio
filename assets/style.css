@@ -150,7 +150,9 @@ label {
     height: auto;
     margin-top: 60px;
     margin-bottom: 60px;
-}
+    filter: blur(--background-colour);
+    z-index: 1;
+    }
 
 .wrapper {
     width: 85%;
