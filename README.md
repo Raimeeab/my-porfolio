@@ -1,18 +1,21 @@
 <img alt="GitHub followers" src="https://img.shields.io/github/followers/Raimeeab?style=social">
-*APPLY REMAINING BADAGES HERE https://shields.io/ *
+<img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Raimeeab/my-porfolio?style=social">
+<img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/w/Raimeeab/my-porfolio?style=social">
 
-# <My Portfolio>
+# Raimee Abbassi's Portfolio
 ---
 ## Description
 This website is created to showcase my portfolio, which will host all my major projects and will allow future employers and clients to become more familiar with my work and skills. I built this website to give myself a little more character and set myself a part from other candidates for any future jobs I apply for. This website will solve the problem of having to send out my major projects as single URLs/ Repos as it conveniently contains all of them in the one space.
 
 I learned the value of the flexbox and media queries functions in creating a responsive website. I also gained skills in my ability to use CSS stylings and psuedo-classes to make my website more dynamic. 
 
-Link to the [site]*{APPLY DEPLOYED LINK HERE}*
+Link to the [site](https://raimeeab.github.io/my-porfolio/)
+
+### My Website WireFrame: 
+![Wireframe](assets/images/website-wireframe.jpg)
 
 ## Usage
 The nav elements allow you to navigate the website's elements. 
-
 ## License
 MIT License
 Copyright (c) [2021] [RaimeeAb]

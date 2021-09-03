@@ -6,7 +6,7 @@
 }
 
 /* TODO: 
-- FIX PROJECT FLEXBOX!
+- FIX PROJECT FLEXBOX! ESP ARE YOU UP IMAGE 
 - Fix form stylings
 - MEDIA QUIERIES
 */
@@ -150,8 +150,6 @@ label {
     height: auto;
     margin-top: 60px;
     margin-bottom: 60px;
-    /* filter: blur(--background-colour);
-    z-index: 1; */
     }
 
 .wrapper {
@@ -159,7 +157,7 @@ label {
     margin: inherit auto;
 }
 
-/* Main flex container */
+/* Main flexbox */
 .sections {
     margin: 1.5rem 0;
     display: flex;
@@ -226,7 +224,8 @@ label {
     position: relative;
  }
 
-.project-images:hover {
+.project-images:hover, 
+.podcast:hover {
     background-image: linear-gradient(
         rgb(25, 133, 161) 10%,
         rgba(62, 121, 136, 0.931) 90%);
@@ -244,7 +243,7 @@ label {
     z-index: 1;
 }
 
-.upcoming-projects {
+.secondary-projects {
     display: flex;
     flex-direction: row;
 }
@@ -254,6 +253,12 @@ iframe {
     margin-right: 90px;
 }
 
+.podcast {
+    width: 90%; 
+    height: auto;
+    margin-left: 40px;
+    object-fit: cover;
+}
 /* ------------------------- Form stylings ------------------------- */
 label {
     font-weight: bold;
@@ -261,7 +266,7 @@ label {
 
 .form {
     padding-left: 240px;
-  }
+}
 
 .form-section {
     display: flex;
@@ -288,6 +293,11 @@ label {
     border-top: 0px solid transparent;
     background-color: transparent;
     position: relative
+}
+
+label input:focus, 
+textarea:focus {
+    border-bottom: 3px solid var(--primary-text-colour);
 }
 
 #submit {
@@ -335,6 +345,41 @@ footer {
 }
 
 /* ------------------------- Media Quiries ------------------------- */
+
+@media screen and (max-width: 1200px) {
+    .container .profile {
+        align-self: stretch;
+        width: 100%;
+        height: auto;
+    }
+
+    .secondary-projects {
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+
+    .project-images {
+        width: 100%;
+        align-items: center;
+    }
+
+    .podcast {
+        margin: 0;
+        width: 100%;
+    }
+
+    iframe {
+        align-content: stretch;
+        width: 100%;
+    }
+
+    .theme-box {
+        flex-basis: none;
+    }
+ 
+
+}
+
 @media screen and (max-width: 950px) {
     .sections, 
     .container, 
@@ -348,31 +393,15 @@ footer {
         justify-content: center;
     }
 
-    .container .profile {
-        align-self: stretch;
-        width: 100%;
-        height: auto;
-    }
-
-    .upcoming-projects {
-        flex-flow: column wrap;
-        justify-content: center;
-    }
-
-    .project-images {
-        width: 100%;
-        align-items: center;
-    }
-    
-    iframe {
-        width: 100%;
-    }
+   .theme-box {
+       flex-basis: none;
+   }
 
     .sections > h2, 
     .form-section > h2 {
         text-align: center;
         padding-bottom: .5rem;
-        flex: 0 0 100px;
+        flex: 0 0 50px;
         border-right: none;
         border-bottom: 3px solid var(--header-colour);
         line-height: 4vw;
@@ -384,6 +413,10 @@ footer {
         margin: none;
         flex-wrap: nowrap;
     }    
+
+    .form {
+        padding-left: 0;
+    }
 }
 
 
