@@ -5,12 +5,6 @@
     --secondary-text-colour: #46494C;
 }
 
-/* TODO: 
-- FIX PROJECT FLEXBOX! ESP ARE YOU UP IMAGE 
-- Fix form stylings
-- MEDIA QUIERIES
-*/
-
 ::selection {
     background-color: var(--primary-text-colour);
     color: var(--background-colour);
@@ -105,7 +99,6 @@ header div h1.title {
 .nav-link {
     color: var(--header-colour);
     margin-left: 25px;
-    /* padding: 10px; */
     transition: padding 250ms ease-in-out, opacity .2s ease-in-out;
     opacity: 50%;
 }
@@ -118,21 +111,21 @@ header div h1.title {
 
 }
 
-/* ------------------------- Main section stylings -----------------------*/
-main {
-    width: 96%;
-    margin: 2rem auto;
-}
-
-
 ul {
     display: flex;
 }
+
 
 a {
     text-decoration: none;
     font-size: 3.5rem;
     color: var(--header-colour);
+}
+
+/* ------------------------- Main section stylings -----------------------*/
+main {
+    width: 96%;
+    margin: 2rem auto;
 }
 
 section {
@@ -144,13 +137,12 @@ label {
     display: block;
 }
 
-/* ------------------------- Main section stylings -----------------------*/
 .workflow {
     width: 100%;
     height: auto;
     margin-top: 60px;
     margin-bottom: 60px;
-    }
+}
 
 .wrapper {
     width: 85%;
@@ -209,7 +201,7 @@ label {
     background-image: linear-gradient(
         rgb(25, 133, 161) 10%,
         rgba(62, 121, 136, 0.931) 90%);
-        opacity: 39%;
+        opacity: 70%;
     display: flex;
     align-items: center;
 }
@@ -222,7 +214,7 @@ label {
 .feature-project {
     flex: 2 1 1;
     position: relative;
- }
+}
 
 .project-images:hover, 
 .podcast:hover {
@@ -301,25 +293,26 @@ textarea:focus {
 }
 
 #submit {
-    background-color: var(--background-colour);
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius:2px;
     padding: 8px;
     margin-left: 180px;
-    color: var(--primary-text-colour);
     font-size: 20px;
     text-decoration: none;
     cursor: pointer;
     border:none;
     position: absolute;
     margin-left: 600px;
+    background:var(--header-colour);
+    color: var(--background-colour);
 }
+
 
 #submit:hover {
     border: none;
     color: var(--background-colour);
-    background:var(--secondary-text-colour);
+    background-color: var(--secondary-text-colour);
     box-shadow: 0px 0px 1px var(--background-colour);
 }
 
@@ -338,6 +331,7 @@ footer {
 
 .logos {
     width: 30px;
+    margin: 0 5px;
 }
 
 .footer-surname {
@@ -374,13 +368,13 @@ footer {
     }
 
     .theme-box {
-        flex-basis: none;
+        flex-basis: 100%;
     }
  
 
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 992px) {
     .sections, 
     .container, 
     .form-section{
@@ -420,10 +414,14 @@ footer {
 }
 
 
-@media screen and (max-width: 610px) {
+@media screen and (max-width: 640px) {
+   
+    .nav-link {
+        margin: 0%;
+    }
+   
     .main-header, ul {
         flex-flow: column wrap;
         justify-content: flex-start;
     }
-
 }
