@@ -5,7 +5,7 @@
 # Raimee Abbassi's Portfolio
 ---
 ## Description
-This website is created to showcase my portfolio, which will host all my major projects and will allow future employers and clients to become more familiar with my work and skills. I built this website to give myself a little more character and set myself a part from other candidates for any future jobs I apply for. This website will solve the problem of having to send out my major projects as single URLs/ Repos as it conveniently contains all of them in the one space.
+This website is created to showcase my portfolio, which will host all my major projects and will allow future employers and clients to become more familiar with my work and skills. I built this website to set myself a part from other candidates for any future jobs I apply for. This website will solve the problem of having to send out my major projects as single URLs/ Repos as it conveniently contains all of them in the one space.
 
 I learned the value of the flexbox and media queries functions in creating a responsive website. I also gained skills in my ability to use CSS stylings and psuedo-classes to make my website more dynamic. 
 
@@ -16,6 +16,7 @@ Link to the [site](https://raimeeab.github.io/my-porfolio/)
 
 ## Usage
 The nav elements allow you to navigate the website's elements. 
+
 ## License
 MIT License
 Copyright (c) [2021] [RaimeeAb]
