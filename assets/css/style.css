@@ -98,6 +98,8 @@ header div h1.title {
 /* Hover effect on nav links */
 .nav-link {
     color: var(--header-colour);
+    font-weight: bolder;
+    font-size: 3.5rem;
     margin-left: 25px;
     transition: padding 250ms ease-in-out, opacity .2s ease-in-out;
     opacity: 50%;
@@ -118,8 +120,7 @@ header div h1.title {
 
 a {
     text-decoration: none;
-    font-size: 3.5rem;
-    color: var(--header-colour);
+  
 }
 
 a:hover {
@@ -213,11 +214,19 @@ label {
 /* "Work" section stylings */
 .gif-demo {
     width: 100%;
+    padding: 0 10px 0 10px;
+    filter: grayscale(80%);
+    transition: all 400ms ease-in-out;
+}
+
+.gif-demo:hover{
+ filter: none;
 }
 
 .feature-project {
-    flex: 2 1 1;
-    position: relative;
+    flex: 1 0 0;
+    /* position: relative; */
+    justify-content: center;
 }
 
 .project-images:hover, 
@@ -243,6 +252,7 @@ label {
 .secondary-projects {
     display: flex;
     flex-direction: row;
+    padding-top: 10px;
 }
 
 iframe {
@@ -271,7 +281,6 @@ form {
 
 .form-section {
     display: flex;
-
 }
 
 .form-section > h2 {
@@ -284,6 +293,7 @@ form {
 }
 
 .form-section > h3 {
+    margin-top: 20px;
     text-align: left;
     padding-right: .5rem;
     flex: 0 0 15%;
@@ -408,7 +418,8 @@ footer {
    }
 
     .sections > h2, 
-    .form-section > h2 {
+    .form-section > h2,
+    .form-section > h3 {
         text-align: center;
         padding-bottom: .5rem;
         flex: 0 0 50px;
