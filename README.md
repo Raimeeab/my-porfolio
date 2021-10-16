@@ -1,4 +1,4 @@
-<img alt="GitHub License" src="https://img.shields.io/apm/l/vim-mode">  <img alt="GitHub Language Count" src="https://img.shields.io/github/languages/count/Raimeeab/portfolio">  <img alt="GitHub Closed Issues" src="https://img.shields.io/github/issues-closed-raw/Raimeeab/portfolio">  <img alt="Branch Check Main" src="https://img.shields.io/github/checks-status/RaimeeAb/portfolio/main">  <img alt="GitHub Commit Activity" src="https://img.shields.io/github/commit-activity/w/Raimeeab/portfolio">
+<img alt="GitHub Followers" src="https://img.shields.io/github/followers/Raimeeab">  <img alt="GitHub License" src="https://img.shields.io/apm/l/vim-mode">  <img alt="GitHub Language Count" src="https://img.shields.io/github/languages/count/Raimeeab/portfolio">  <img alt="GitHub Commit Activity" src="https://img.shields.io/github/commit-activity/w/Raimeeab/portfolio">
 
 # Raimee Abbassi's Portfolio
 ---
@@ -13,7 +13,6 @@ Link to the [site](https://raimeeab.github.io/porfolio/)
 The nav elements allow you to navigate the website's elements.
 
 ## Technologies used
-- JavaScript
 - CSS
 - HTML 5
 

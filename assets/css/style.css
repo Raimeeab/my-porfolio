@@ -117,11 +117,6 @@ header div h1.title {
 
 }
 
-/* ul {
-    display: flex;
-} */
-
-
 a {
     text-decoration: none;
   
@@ -421,8 +416,7 @@ footer {
 }
 
 @media screen and (max-width: 992px) {
-    .sections, 
-    .container, 
+    .sections,  
     .form-section{
         flex-flow: column nowrap;
     }
@@ -474,7 +468,6 @@ footer {
 
 
 @media screen and (max-width: 640px) {
-   
     .nav-link {
         margin: 0%;
     }
