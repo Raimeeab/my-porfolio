@@ -7,7 +7,7 @@ This website is created to showcase my portfolio, which will host all my major p
 
 I learned the value of the flexbox and media queries functions in creating a responsive website. I also gained skills in my ability to use CSS stylings and psuedo-classes to make my website more dynamic. 
 
-Link to the [site](https://raimeeab.github.io/porfolio/)
+Link to the [site]( https://raimeeab.github.io/portfolio/)
 
 ## Usage
 The nav elements allow you to navigate the website's elements.
