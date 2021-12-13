@@ -119,6 +119,7 @@ header div h1.title {
 
 a {
     text-decoration: none;
+    
   
 }
 
@@ -294,7 +295,12 @@ form {
     border-right: 0px solid transparent;
     border-top: 0px solid transparent;
     background-color: transparent;
-    position: relative
+    position: relative;
+}
+
+.form-control {
+    font-size: 1.5rem;
+    color: var(--secondary-text-colour);
 }
 
 label input:focus, 
@@ -355,12 +361,13 @@ footer {
 }
 
 .logos {
-    width: 30px;
+    width: 8px;
     margin: 0 5px;
 }
 
-.icons { 
-    margin: 5px;
+#github,
+#linkedin {
+    color: #358dc0;
 }
 
 #phone,
